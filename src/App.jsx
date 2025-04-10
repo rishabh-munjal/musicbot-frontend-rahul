@@ -29,7 +29,7 @@ function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
 function App() {
   const [progress, setProgress] = useState(18);
 
-  const radius = 135;
+  const radius = 137;
   const startDeg = 30;
   const endDeg = 330;
   const arcLength = endDeg - startDeg;
@@ -56,9 +56,9 @@ function App() {
       </div>
 
                     {/* Time */}
-                    <div className="text-xs sm:text-sm text-gray-300 mb-0 ">
-        {currentTime} | <span className="text-[#E1B269]">{duration}</span>
-      </div>
+                    <div className="absolute top-[25%] sm:top-[25%] left-1/2 transform -translate-x-1/2 text-xs sm:text-sm text-gray-300">
+    {currentTime} | <span className="text-[#E1B269]">{duration}</span>
+  </div>
 
 
 
